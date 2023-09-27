@@ -1,0 +1,43 @@
+/* Estilo do container do main */
+.container-main{
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    display: flex; /* Define o layout como flexível */
+    justify-content: center; /* Alinha os itens horizontalmente no centro */
+}
+
+/* Estilo do conteúdo 1: Texto e botão */
+.content-1{
+    display: flex; /* Define o layout como flexível */
+    flex-wrap: wrap; /* Controla como os itens flexíveis devem ficar quando não há espaço */
+    justify-content: center; /* Alinha os itens horizontalmente no centro */
+    margin: 0 3.4rem; /* Margem - espaço no topo e na parte inferior */ 
+    text-align: center; /* texto alinhado no centro */
+}
+
+.content-1 h2, p, button{align-items: center; font-weight: lighter;} /* Texto alinhado no centro e fonte mais fina */
+
+.content-1 h2{
+    color: #ffffff; /* Cor do texto */
+    font-size: 40px; /* Tamanho da fonte */
+    font-weight: 400; /* Fonte mais grossa */
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.50); /* Texto com sombra - 1º valor define o deslocamento horizontal, 2º valor o deslocamento vertical e o 3º valor define o desfoque da sombra; cor da sombra */
+}
+
+.content-1 p{font-size: 30px; text-align: center;} /* Tamanho da fonte e o texto alinhado no centro */
+
+#button-saiba{
+    background-color: #ff5b32; /* Cor de fundo do botão */
+    border: none; /* Sem borda */
+    border-radius: 10px; /* Define o raio dos cantos da borda */
+    color: #ffffff; /* Cor do texto */
+    font-size: 15px; /* Tamanho da fonte */
+    padding: 1rem;  /* Espaçamento interno */
+}
+
+/* Estilo do conteúdo 2: Imagem */
+.content-2 img{
+    align-items: center; /* Alinhamento do item, no caso da imagem, deixa centralizado */
+    border-radius: 18rem; /* Define o raio dos cantos da borda */
+    margin: 5rem 4.5rem; /* Margem - espaço no topo e na parte inferior */ 
+    width: 25rem; /* Tamanho da imagem */
+}

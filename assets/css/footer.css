@@ -1,0 +1,38 @@
+/* Estilo do footer  */
+.footer-container{
+    align-items: center; /* Alinha os itens ao centro */
+    display: grid; /* Define o layout em grade (linhas e colunas) */
+    font-size: 18px; /* Tamanho da fonte */
+    grid-template-columns: 1fr 1fr 1fr; /* Define o número e o tamanho da coluna em um layout grid */
+    justify-content: center; /* Alinha os itens horizontalmente no centro */
+    padding: 1rem; /* Espaçamento interno */    
+} 
+
+/* Estilo do logo / texto: email e telefone  */
+.footer-1{grid-column: 1; justify-content: space-between;} /* Ocupa a coluna 1 na grade; e distribui igualmente o espaço entre os itens */
+
+.footer-1 p{margin: 1rem;} /* Espaçamento externo */
+
+.footer-1 img{filter: drop-shadow(1px -2px 3px #ffffff); padding: 0; width: 100px;} /* Cria sombra na imagem - 1º valor define o deslocamento horizontal, 2º valor define o deslocamento vertical e o 3º valor define o desfoque da sombra e depois a cor; espaçamento interno e largura */
+
+.author-email, .author-phone{color: #ffffff; text-decoration: none;} /* Cor do texto; remove o sublinhado do link */
+
+/* Estilo do texto: localização  */
+.footer-2{grid-column: 2;} /* Ocupa a coluna 2 na grade */
+
+/* Estilo dos ícones das redes sociais  */
+.social-links{grid-column: 3;} /* Ocupa a coluna 3 na grade */
+
+.social-links a{
+    border-radius: 20px; /* Define o raio dos cantos da borda */
+    color: #ffffff; /* Define a cor dos ícones das redes sociais */    
+    gap: 1rem; /* Define o espaçamento entre os elementos */
+    padding: 10px; /* Espaçamento interno */
+} 
+
+/* Estilo do texto: direitos reservados */
+.footer-bottom{
+    grid-column: 2; /* Ocupa a coluna 2 na grade */
+    margin-top: 1.5rem; /* Espaçamento externo no topo */
+    padding-top: 1rem; /* Espaçamento interno no topo */
+}

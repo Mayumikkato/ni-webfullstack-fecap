@@ -1,0 +1,25 @@
+/* Estilo da seção 1: Cards com Bootstrap */
+#section-1{
+    background-color:#f1ead6; /* Cor de fundo da seção 1 */
+    height: auto; /* Define a altura de forma automática */
+    max-width: 100%; /* Define a largura máxima para 100% */
+}
+
+/* Estilo do Título */
+.container-cards h1{color:#000000; font-size: 32px; margin-top: 1rem; padding: 0;} /* Cor do texto; tamanho da fonte; margem no topo; espaçamento interno */ 
+
+/* Estilo dos cards  */
+.col{margin: 0.5rem; width: 20rem;} /* margin - espaçamento; tamanho da largura */
+
+.card-img-top{border-radius: 50rem;} /* Define o raio dos cantos da borda */
+
+.custom-card{
+    background-color: transparent; /* Cor de fundo transparente */
+    border-color: #ff7e2c; /* Cor da borda */
+    border-top-left-radius: 50rem; /* Define o raio do canto superior esquerdo */
+    border-top-right-radius: 50rem; /* Define o raio do canto superior direito */
+    border-bottom-left-radius: 20rem; /* Define o raio do canto inferior esquerdo */
+    border-bottom-right-radius: 3rem; /* Define o raio do canto inferior direito */
+}
+
+.card-title{color: #000000;} /* Cor do texto */

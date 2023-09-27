@@ -1,0 +1,148 @@
+/* Início do Media queries - Layout responsivo */
+@media screen and (max-width: 768px){
+
+    /* Body  */
+    body{max-height: auto; max-width: 100vh;} /* Altura máxima automática e largura máxima de 100% viewport */
+   
+    
+    /* Container  */
+    .container{align-items: center; max-width: 200vh;} /* Itens alinhados ao centro; largura máxima */
+
+ 
+    /* Estilo do navegador responsivo */
+    nav{margin-left: 1.8rem;} /* Espaçamento externo à esquerda */
+   
+    .menu-items{
+        display: block; /* Define elemento em bloco */
+        height: 0; /* Altura 0 */
+        min-width: 100%; /* Largura máxima */
+        overflow-y: hidden; /* Oculta o menu quando desativado o menu hamburguer */
+        margin: 0; /* Espaçamento externo 0 */
+        padding: 0; /* Espaçamento interno 0 */
+        transition: .3s; /* Define a animação de transição quando o menu fecha ou abre */
+    }
+
+    .menu-items a{
+        border:none; /* Sem borda */
+        font-size: 18px; /* Tamanho da fonte */
+        justify-content: center; /* Alinha os itens horizontalmente no centro */
+        margin: 0 1rem; /* Margem - espaço no topo e na parte inferior */ 
+        padding: 1.35rem 0.5rem; /* Espaçamento interno do topo e na parte inferior */
+    }
+
+    .nav.active .menu-items{height: calc(100vh - 400px);} /* Altura - Calcula a altura de acordo com o tamanho do viewport */
+
+    /* Estilo do logo  */
+    .logo-img{margin-left: 0.6rem;} /* Espaçamento externo na esquerda */
+
+    /* Menu hamburguer */
+    #hamburguer-menu{
+        border-top: 2px solid; /* Borda do topo - largura e estilo */
+        margin: 1px 15px 0 0; /* Margem externa: 1º valor define o topo, 2º valor define o lado direito, 3º valor define a parte inferior e o 4º valor define o lado esquerdo */
+        width: 30px; /* Tamanho da largura do menu hamburguer */
+        z-index: 1000; /* Ordem de empilhamento - deixa o menu hamburguer á frente */
+    }
+
+    #hamburguer-menu::after, #hamburguer-menu::before{
+        background: currentColor; /* Todo estilo deve ser definido com a mesma cor do elemento */
+        content: ''; /* Insere conteúdo, no caso só um espaço */
+        display: block; /* Define o elemento em bloco */
+        height: 2px; /* Altura */
+        margin-top: 8px; /* Margem externa - espaçamento do topo */
+        position: relative; /* Posicionamento do elemento permanece no fluxo normal do conteúdo */
+        transition: .3s; /* Define a animação de transição quando o menu fecha ou abre */
+        width: 30px; /* Tamanho da largura do menu hamburguer */   
+    }
+
+    .nav.active #hamburguer-menu{border-top-color: transparent; margin: 2px 15px 0 0;} /* Define a cor superior da borda como transparente; margem externa: 1º valor define o topo, 2º valor define o lado direito, 3º valor define a parte inferior e o 4º valor define o lado esquerdo */ 
+
+    .nav.active #hamburguer-menu::before{transform: rotate(135deg);} /* Define a rotação do elemento, no caso o X (fecha) do menu hamburguer */
+
+    .nav.active #hamburguer-menu::after{top: -10px; transform: rotate(-135deg);} /* Define a posição vertical do elemento (X); E a rotação do menu hamburguer */
+
+
+    /* Estilo do botão dentro do menu hamburguer */
+    .reserva-horario{cursor: none;} /* Sem cursor */
+
+
+   /* Estilo do container do Main  */
+   .container-main{
+    align-items: center; /* Alinhamento dos itens centralizado */
+    display: block; /* Define o elemento em bloco, os elementos dentro do container ficam um embaixo do outro */
+    justify-content: center; /* Alinha os itens horizontalmente no centro */
+    }
+
+
+    /* Estilo do texto / botão / Imagem  */
+    .content-1 h2{font-size: 40px; margin: 1rem;} /* Tamanho da fonte; margem externa - espaçamento */
+
+    .content-1 p{font-size: 25px; text-align: center;} /* Tamanho da fonte; texto alinhado ao centro */
+
+    #button-saiba{font-size: 16px;} /* Tamanho da fonte */
+
+    .content-2 img{height: 18rem; margin: 1.5rem; width: 18rem;} /* Altura; margem externa - espaçamento; largura da imagem */
+
+
+    /* Estilo da Seção 2  */
+    #section-2{background: url('../img/prato-sushi.jpg') fixed center/cover;} /* Caminho para a imagem, a imagem fica fixa e centralizada quando rola a página. E cobre completamente. */
+
+    /* Estilo do Container */
+    .container-section-2{
+        align-items: center; /* Alinha os itens verticalmente no centro */
+        display: flex; /* Define o layout como flexível */
+        justify-content: center; /* Alinha os itens horizontalmente no centro */
+    }
+    
+    /* Estilo do Conteúdo */
+    .content-section-2{
+        display: flex; /* Define o layout como flexível */
+        flex-wrap: wrap; /* Controla como os itens flexíveis devem ficar quando não há espaço */
+        justify-content: center; /* Alinha os itens horizontalmente no centro */
+        margin: 0 3.4rem; /* Margem - espaço no topo e na parte inferior */ 
+        text-align: center; /* texto alinhado no centro */
+    }   
+
+    /* Estilo do botão */
+    .button-section{font-size: 16px;} /* Tamanho da fonte */
+    
+
+    /* Estilo da Seção 3  */
+    .container-ambiente{
+        display: grid; /* Define o layout em grade (linhas e colunas) */
+        grid-template-columns: 0.5fr 1fr 0.5fr; /* Define o número e o tamanho da coluna em um layout grid */
+        grid-template-rows: 1fr 1fr 1fr; /* Define o número e o tamanho da linha em um layout grid*/
+        margin: 1rem; /* margem externa - espaçamento */
+    }
+
+    /* Estilo das imagens */
+    .ambiente-1, .ambiente-2, .ambiente-3{grid-column: 2;} /* Ocupa a coluna 2 na grade */
+
+    .ambiente-1{grid-row: 1;} /* ocupa a linha 1 na grade */
+
+    .ambiente-2{grid-row:2} /* ocupa a linha 2 na grade */
+
+    .ambiente-3{grid-row: 3;} /* ocupa a linha 3 na grade */
+
+    .container-ambiente img{width: 18rem;}
+
+
+    /* Estilo do footer  */
+    .footer-container{
+        display: grid; /* Define o layout em grade (linhas e colunas) */
+        grid-template-columns: 1fr; /* Define o número e o tamanho da coluna em um layout grid */
+        grid-template-rows: 0.7fr 0.7fr 0.7fr 0.4fr; /* Define o número e o tamanho da linha em um layout grid*/
+
+    } 
+
+    .footer-1, .footer-2, .social-links, .footer-bottom{grid-column: 1; padding: 0;} /* Ocupa a coluna 1; Espaçamento interno 0 */
+
+    .footer-1{grid-row: 1;} /* Ocupa a linha 1 na grade */
+
+    .footer-2{grid-row: 2;} /* Ocupa a linha 2 na grade */
+
+    .social-links{grid-row: 3;} /* Ocupa a linha 3 na grade */
+
+    .footer-bottom{grid-row: 4;} /* Ocupa a linha 4 na grade */
+
+}
+/* Fim do Media queries - Layout responsivo */

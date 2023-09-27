@@ -1,0 +1,18 @@
+/* Estilo da Seção 3  */
+#section-3{background-color: #f1ead6;} /* Cor de fundo */
+
+/* Estilo do Título  */
+#section-3 h1{color:#000000; font-size: 32px; margin: 1rem;} /* Cor do texto; tamanho da fonte; margem - espaçamento */
+
+/* Estilo do Container  */
+.container-ambiente{display:flex; justify-content: center; margin: 1rem;} /* Define o layout como flexível; Alinha os itens horizontalmente no centro; margem - espaçamento */
+
+/* Estilo das imagens  */
+.ambiente-1, .ambiente-2, .ambiente-3{border: 1px solid #ff5b32; padding: 15px;} /* Borda em volta da imagem: 1º valor define a largura, 2º valor define o estilo, 3º valor define a cor da borda; espaçamento interno */
+
+.container-ambiente img{
+    border-radius: 3rem; /* Define o raio dos cantos da borda */
+    height: auto; /* Define a altura de forma automática */
+    margin:0.5rem 2rem; /* Margem - espaço no topo e na parte inferior */
+    width: 16rem; /* Tamanho da imagem */
+}

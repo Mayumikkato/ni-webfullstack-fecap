@@ -1,0 +1,45 @@
+/* Estilo da navegação  */
+nav{
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    border-radius: 5px; /*Define o raio dos cantos da borda */
+    display: flex; /* Define o layout como flexível */
+    justify-content: space-between; /* Distribui igualmente o espaço entre os itens */
+    padding: 30px; /* Espaçamento interno */
+}
+
+/* Estilo do logo */
+.logo-img{
+    filter: drop-shadow(1px -2px 3px #ffffff); /* Cria sombra na imagem - 1º valor define o deslocamento horizontal, 2º valor define o deslocamento vertical e o 3º valor define o desfoque da sombra e depois a cor */
+    margin-left: 1.4rem; /* Define a margem, espaço à esquerda */
+    width: 9rem; /* Tamanho da imagem */
+}
+
+/* Estilo da lista não ordenada  */
+.menu-items{
+    align-items: center; /* Alinhamento dos itens, no caso do menu, deixa centralizado */
+    display: flex; /* Define o layout como flexível */
+    gap: 20px; /* Define o espaçamento */
+    justify-content: space-between; /* Distribui igualmente o espaço entre os itens */
+    list-style: none; /* Remove o marcador da lista não ordenada */
+    margin: 1px 0; /* Margem - espaço no topo e na parte inferior */ 
+    padding: 5px; /* Espaçamento interno */
+}
+
+.menu-items li a{
+    color: #ffffff; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.menu-items a{display: flex; padding: 5px 10px;} /* Define o layout como flexível e espaçamento interno no topo e na parte inferior*/
+
+/* Estilo do botão  */
+.reserva-horario{
+    background-color: #ff5b32; /* Cor de fundo do botão */
+    border: none; /* Sem borda */
+    border-radius: 10px;  /* Define o raio dos cantos da borda */
+    color: #ffffff; /* Cor do texto */
+    cursor: pointer; /* Cursor de mãozinha */
+    padding: 1rem; /* Espaçamento interno */
+    text-align: center; /* Texto alinhado ao centro */
+}

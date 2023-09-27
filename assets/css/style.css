@@ -1,0 +1,32 @@
+/* Imports dos Estilos:  */
+
+/* Estilo global  */
+@import url('global.css');
+
+
+/* Header: Estilo do menu navegação dentro do Header*/
+@import url('header-navegacao.css');
+
+
+/* Main */
+@import url('main.css');
+
+
+/* Seção 1: Sushi para todos os paladares */
+@import url('section-1-paladares.css');
+
+
+/* Seção 2: Prato de sushi com uma frase e botão */
+@import url('section-2-prato-sushi.css');
+
+
+/* Seção 3: Ambiente  */
+@import url('section-3-ambiente.css');
+
+
+/* Footer  */
+@import url('footer.css');
+
+
+/* Media Queries - responsivo */
+@import url('style-responsivo.css');

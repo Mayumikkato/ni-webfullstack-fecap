@@ -1,0 +1,27 @@
+/* Estilo da Seção 2  */
+#section-2{background: url('../img/prato-sushi.jpg') fixed; background-size:cover;} /* Caminho para a imagem; Imagem fica fixa quando rola a página; a imagem cobre completamente o elemento */
+
+/* Estilo do Container */
+.container-section-2{
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    display: flex; /* Define o layout como flexível */
+    height: auto; /* Define a altura de forma automática */
+    justify-content: center; /* Alinha os itens horizontalmente no centro */
+    max-width: 100%; /* Define a largura máxima para 100% */
+    padding:10rem; /* Espaçamento interno */    
+}
+
+/* Estilo do botão  */
+.button-section{
+    background-color: #ff5b32; /*Cor de fundo */
+    border: none; /* Sem borda */
+    border-radius: 10px; /* Define o raio dos cantos da borda */
+    color: #ffffff; /* Cor do texto */
+    font-size: 15px; /* Tamanho da fonte */
+    padding: 1rem; /* Espaçamento interno */
+}
+
+/* Estilo dos textos  */
+.container-section-2 h1, h2, button{text-align: center;} /* Texto alinhado ao centro */
+
+.container-section-2 h1, h2{font-size: 25px; text-shadow: 3px 3px 3px #000000;} /* Tamanho da fonte; /* Texto com sombra - 1º valor define o deslocamento horizontal, 2º valor o deslocamento vertical e o 3º valor define o desfoque da sombra; Cor da sombra*/

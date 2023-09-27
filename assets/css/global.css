@@ -1,0 +1,45 @@
+/* Reset  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap'); /*Importa do Google Fonts, a fonte Roboto.*/
+
+*{
+    font-family: 'Roboto', sans-serif; /*Define a fonte universal da página como Roboto e se não estiver disponível, utilizará a fonte sans-serif padrão*/
+    margin: 0; /*Define que todos os elementos da página devem ter margin 0*/
+    padding: 0; /*Define que todos os elementos da página devem ter padding 0*/
+}
+
+/* Estilo do corpo da página  */
+body{background-image: url('../img/img-body.jpg'); margin: 0 auto;} /* Imagem de fundo do body; espaçamento externo topo */
+
+
+/* Container  */
+.container{
+    color: #ffffff; /* Cor do texto */
+    display: grid; /* Define o layout em grade (linhas e colunas) */
+    grid-template-columns: 0.5fr 0.5fr 0.5fr; /* Define o número e o tamanho da coluna em um layout grid */
+    grid-template-rows: 0fr 0.2fr 0.1fr 0.2fr 0.1fr; /* Define o número e o tamanho da linha em um layout grid*/
+    grid-template-areas:
+                        "header header header"
+                        "main main main"
+                        "section-1 section-1 section-1"
+                        "section-2 section-2 section-2"
+                        "section-3 section-3 section-3"
+                        "footer footer footer"; /* Define em que área cada nomeação fica dentro de um layout grid */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+
+/* Estilos das tags semânticas: Header / Main / Section / Footer  */
+header,main, section, footer{
+    background-color: #00000080; /* Cor de fundo com transparencia */
+    border-radius: 5px; /* Define o raio dos cantos da borda */
+    margin: 3px; /* Espaçamento externo */  
+}
+
+
+/* Grid area  */
+header{grid-area: header;} /* Associa os elementos à área header */
+main{grid-area: main;} /* Associa os elementos à área main */
+#section-1{grid-area: section-1;} /* Associa os elementos à área section-1 */
+#section-2{grid-area: section-2;} /* Associa os elementos à área section-2 */
+#section-3{grid-area: section-3;} /* Associa os elementos à área section-3 */
+footer{grid-area:footer;} /* Associa os elementos à área footer */
