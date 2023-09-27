@@ -30,7 +30,7 @@
         padding: 1.35rem 0.5rem; /* Espaçamento interno do topo e na parte inferior */
     }
 
-    .nav.active .menu-items{height: calc(100vh - 500px);} /* Altura - Calcula a altura de acordo com o tamanho do viewport */
+    .nav.active .menu-items{height: auto;} /* Altura - Calcula a altura de acordo com o tamanho do viewport */
 
     /* Estilo do logo  */
     .logo-img{margin-left: 0.6rem;} /* Espaçamento externo na esquerda */
